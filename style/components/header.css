@@ -1,0 +1,36 @@
+header{
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__item p{
+    color: black;
+    font-size: 14px;
+}
+
+.header__item{
+    display: flex;
+}
+
+.header__item a{
+    color: #555555;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    transition: .4s;
+}
+
+.header__item a:hover{
+    color: #bac34e;
+}
+
+.header_menu{
+    background-color: #fff;
+}
+
+@media(max-width:1000px){
+    .header{
+        display: none;
+    }
+}

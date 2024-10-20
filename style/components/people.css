@@ -1,0 +1,93 @@
+.people{
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-between;
+}
+
+.people-image, .people-text, .people-info{
+    width: calc(50% - 30px);
+}
+
+.people-image>img{
+    width: 100%;
+}
+
+
+.people-image{
+    padding: 0 15px;
+}
+
+.people-text{
+    padding: 0 5%;
+}
+
+.people-text h2, .people-info h2{
+    font-size: 35px;
+    color: #0A472E;
+    margin-bottom: 20px;
+}
+
+.people-text p{
+    color: #555555;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.people-info{
+    display: flex;
+    margin-top: 40px;
+}
+
+.people-info p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.people-info span{
+    font-size: 16px;
+    color: #aaa;
+}
+
+.people-info img{
+    margin-right: 20px;
+}
+
+@media(max-width:1400px){
+    .people-image, .people-text, .people-info{
+        width: 50%;
+    }
+}
+
+@media(max-width:1000px){
+    .people-image{
+        display: none;
+    }
+    
+    .people-text, .people-info{
+        width: 100%;
+    }
+
+
+    .people-text{
+        padding: 0;
+    }
+
+    .people{
+        margin: 60px 0;;
+    }
+}
+
+@media(max-width:500px){
+    .people-info h2, .people-text h2{
+        font-size: 25px;
+    }
+
+    .people{
+        margin: 30px 0 0 0;
+    }
+
+    .people-info div:first-child{
+        display: none;
+    }
+}

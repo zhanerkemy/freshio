@@ -1,0 +1,125 @@
+.nav, .nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    background-color: #0a472e;
+    color: white;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    src: url(../../fonts/Roboto-Light.ttf);
+}
+
+.nav-left p{
+    font-family: "Roboto-light";
+}
+
+.nav i{
+    color: white;
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(../../fonts/Roboto-Bold.ttf);
+}
+
+.nav a{
+    color: white;
+    margin-right: 20px;
+    transition: .4s;
+    font-family: "Roboto-bold";
+}
+
+.nav-left i{
+    margin-right: 20px;
+}
+
+.nav-left{
+    padding-right: 50px;
+    position: relative;
+}
+
+#burger-menu{
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    left: -20px;
+    right: 0;
+    padding: 10px 10px 20px;
+    z-index: 10;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.75);
+    border-radius: 5px;
+    transform: translateY(5%);
+    display: none;
+}
+
+#burger-menu::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    display: block;
+    top: -5px;
+    bottom: auto;
+    position: absolute;
+    left: 30px;
+}
+
+.burger-item{
+    padding: 13px 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.burger-item p{
+    color: #000;
+    font-weight: 400;
+}
+
+.burger-item:hover p{
+    color: #bac34e;
+    transition: .4s;
+}
+
+
+.burger-item:last-child{
+    border-bottom: none;
+}
+
+.open-menu{
+    display: block !important;
+}
+
+.nav-right{
+    border-left: 1px solid #e1e1e1;
+    padding-left: 50px;
+}
+
+.nav a:hover{
+    color: #bac34e;
+}
+
+.nav-right i{
+    transition: .4s;
+}
+
+.nav-right i:hover{
+    color: #bac34e;
+}
+
+@media(max-width:1000px){
+    .nav-right{
+        display: none;
+    }
+}
+
+@media(max-width:400px){
+    .nav-left p{
+        font-size: 15px;
+    }
+}

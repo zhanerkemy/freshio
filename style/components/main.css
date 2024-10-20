@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "Dancing";
+    src: url(../../fonts/DancingScript-Bold.ttf);
+}
+
+.main-top {
+    background-image: url(../../img/main2.webp);
+    height: calc(50% - 15px);
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 10%;
+}
+
+.main-bottom {
+    background-image: url(../../img/main3.webp);
+    height: calc(50% - 15px);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.main{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 35vw;
+}
+
+.main-slider{
+    width: calc(66% - 15px);
+}
+
+.main-item {
+    width: calc(34% - 15px);
+    height: 100%;
+}
+
+.main-slider-item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px;
+}
+
+.main-slider-item > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main-slider-item h4{
+    font-family: "Dancing";
+    font-size: 24px;
+    color: #bac43e;
+}
+
+.main-slider-item h1{
+    color: #0a472e;
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+.shop-link{
+    font-size: 12px;
+    border-bottom: 3px solid #000;
+    font-weight: 700;
+    padding-bottom: 5px;
+    width: fit-content;
+    transition: .4s;
+}
+
+.shop-link a{
+    display: flex;
+    align-items: center;
+    color: #000;
+    transition: .4s;
+}
+
+.shop-link img {
+    width: 10px;
+    margin-left: 5px;
+    transition: .4s;
+}
+
+.shop-link:hover{
+    border-color: #bac34e;
+}
+
+.shop-link:hover a{
+    color: #bac34e;
+}
+
+.shop-link:hover img{
+    margin-left: 10px;
+    filter: invert(83%) sepia(9%) saturate(2458%) hue-rotate(18deg) brightness(94%) contrast(82%);
+}
+
+.main-top h2{
+    color: #0a472e;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.main-bottom h4{
+    font-family: "Dancing";
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.main-bottom h2{
+    font-size: 40px;
+    color: #f4ed23;
+    line-height: 30px;
+    margin-bottom: 30px;
+    /* margin: 15px 0; */
+}
+
+.main-bottom p{
+    font-size: 14px;
+    color: #fff;
+}
+
+.shop-button{
+    background-color: #bac34e;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.shop-button:hover{
+    background-color: #fff;
+}
+
+.shop-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    transition: .4s;
+}
+
+.shop-button:hover a{
+    color: #bac34e;
+}
+
+.shop-button img{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    filter: invert(1);
+}
+
+@media(max-width:1140px){
+    .main{
+        flex-wrap:wrap;
+        height: fit-content;
+    }
+
+    .main-slider{
+        width: 100%;
+    }
+
+    .main-item{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .main-top, .main-bottom{
+        width: calc(50% - 30px);
+        min-height: 300px;
+    }
+
+    .main-top{
+        padding: 5%;
+    }
+}
+
+@media(max-width:650px){
+    .main-item{
+        flex-wrap:wrap;
+    }
+
+    .main-top,
+    .main-bottom{
+        width: 100%;
+    }
+
+    .main-slider-item{
+        padding: 50px;
+        min-height: 350px;
+    }
+
+    .main-slider-item h1{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:360px){
+
+    .main-top,
+    .main-bottom{
+        min-height: 250px;
+    }
+
+    .main-slider-item{
+        padding: 30px;
+        min-height: 300px;
+    }
+
+    .main-slider-item h1{
+        font-size: 20px;
+    }
+}
